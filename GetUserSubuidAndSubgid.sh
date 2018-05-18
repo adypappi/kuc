@@ -4,9 +4,7 @@
 # Output is: 
 #     subuid:subuidcount
 #     subgid:subgidcount
-set -o errexit
-set -o pipefail
-set -o nounset
+set -euxo pipefail 
 if [[ $# -ne 1 ]]
 then
   printf "The username is required as argument to run this script.\n\tUsage:$0 timsli\n"
