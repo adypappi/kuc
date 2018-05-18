@@ -5,6 +5,8 @@
 # Output is: 
 #     subuid:subuidcount
 #     subgid:subgidcount
+# If the username exist into /etc/sub|ug]id. 
+# If the username does not exist and empty string if returned
 set -o errexit
 set -o pipefail
 set -o nounset
