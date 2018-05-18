@@ -12,4 +12,4 @@ then
   printf "The username is required as argument to run this script.\n\tUsage:$0 timsli\n"
   exit -1
 fi
-username=$1; cat /etc/sub*id | grep $username | cut -d':' -f2 f3
+username=$1; cat /etc/sub*id | grep $username | cut -d':' -f2-3
