@@ -7,5 +7,9 @@
 set -o errexit
 set -o pipefail
 set -o nounset
-if [[ #$ -ne 1 ]]; then printf "The username is required as argument to run this script.\n\tUsage:$0 timsli\n"; exit -1; fi
-user=timsli; cat /etc/sub*id | grep $user | cut -d":" -f2-3
+if [[ #$ -ne 1 ]]
+then 
+  printf "The username is required as argument to run this script.\n\tUsage:$0 timsli\n"
+  exit -1
+fi
+username=$1; cat /etc/sub*id | grep $username | cut -d":" -f2-3
