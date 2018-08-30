@@ -1,5 +1,7 @@
 
-
+#!/usr/bin/env bash
+# In adypappi ndc architecture each datacenter has a proxy fw umt server. 
+# This script generate the other script /etc/profile.d/adipappi_proxy.sh
 export  PapiProxyEnvFile=/etc/profile.d/adipappi_proxy.sh
 export PROXY_FQDN=pfwprxlnx1.adipappi.int
 export PROXY_PORT=8989
