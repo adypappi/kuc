@@ -1,0 +1,1 @@
+declare -a nicHWaddr=($(ip a | awk  '/link\/([a-zA-Z0-9_])/ {print $2}'))
