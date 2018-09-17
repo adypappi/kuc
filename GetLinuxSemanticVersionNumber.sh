@@ -1,2 +1,2 @@
-#Get debian based linux Semantic version number X.Y.Z from bash command line
-uname -v | grep -Po "(?<=SMP Debian )(\d+\.\d+\.\d+)"
+#Get the kernel linux Semantic version number X.Y.Z from bash command line
+uname -r | grep -Po "(\d+\.\d+\.\d+)"
