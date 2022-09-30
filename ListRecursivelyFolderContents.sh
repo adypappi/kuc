@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 #
-# List recursively given folder subfolders and files. 
+# List recursively given folder subfolders and files. Default folder to list is /tmp
+folder=${1:-/tmp}
 IFS_OLD=$IFS; 
 IFS=;
 for fl in $(ls -Ra -1 ${folder} | sed -r 's|^\s*$|;|g' | grep -Pv "\./|\.\./"  | xargs)
